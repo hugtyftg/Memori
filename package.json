@@ -1,8 +1,11 @@
 {
   "name": "Memori",
   "productName": "Memori",
+  "type": "module",
   "version": "0.0.0",
   "description": "AI memory based on Electron",
+  "license": "MIT",
+  "keywords": [],
   "main": ".vite/build/index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -11,9 +14,18 @@
     "publish": "electron-forge publish",
     "lint": "eslint --fix"
   },
-  "keywords": [],
-  "license": "MIT",
+  "dependencies": {
+    "@vueuse/core": "^14.0.0-alpha.0",
+    "electron-squirrel-startup": "^1.0.1",
+    "naive-ui": "^2.42.0",
+    "pinia": "^3.0.3",
+    "vfonts": "^0.0.3",
+    "vue": "^3.5.17",
+    "vue-i18n": "^11.1.9",
+    "vue-router": "^4.5.1"
+  },
   "devDependencies": {
+    "@antfu/eslint-config": "^4.13.1",
     "@electron-forge/cli": "7.8.1",
     "@electron-forge/maker-deb": "7.8.1",
     "@electron-forge/maker-rpm": "7.8.1",
@@ -28,24 +40,13 @@
     "@types/node": "^24.0.8",
     "@vitejs/plugin-vue": "^6.0.0",
     "electron": "^37.6.0",
-    "tailwindcss": "^4.1.11",
-    "typescript": "^5.8.3",
-    "unplugin-auto-import": "^20.1.0",
-    "vite": "^6.0.0",
-    "@antfu/eslint-config": "^4.13.1",
     "eslint": "^9.27.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-format": "^1.0.1",
-    "eslint-plugin-prettier": "^5.4.1"
-  },
-  "dependencies": {
-    "@vueuse/core": "^14.0.0-alpha.0",
-    "electron-squirrel-startup": "^1.0.1",
-    "naive-ui": "^2.42.0",
-    "pinia": "^3.0.3",
-    "vfonts": "^0.0.3",
-    "vue": "^3.5.17",
-    "vue-i18n": "^11.1.9",
-    "vue-router": "^4.5.1"
+    "eslint-plugin-prettier": "^5.4.1",
+    "tailwindcss": "^4.1.11",
+    "typescript": "^5.8.3",
+    "unplugin-auto-import": "^20.1.0",
+    "vite": "^6.0.0"
   }
 }

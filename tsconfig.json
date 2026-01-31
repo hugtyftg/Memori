@@ -1,13 +1,4 @@
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.config.json"
-    }
-  ],
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
@@ -17,5 +8,14 @@
       "@renderer": ["./renderer/*"],
       "@locales": ["./locales/*"]
     }
-  }
+  },
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.config.json"
+    }
+  ],
+  "files": []
 }

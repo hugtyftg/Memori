@@ -1,6 +1,6 @@
-import { CSSOptions, defineConfig } from 'vite';
 import { resolve } from 'node:path';
 import autoImport from 'unplugin-auto-import/vite';
+import { CSSOptions, defineConfig } from 'vite';
 
 // https://vitejs.dev/config
 // 注意是异步加载

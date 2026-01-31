@@ -1,5 +1,6 @@
 /// <reference types="@electron-forge/plugin-vite/forge-vite-env" />
 import path from 'node:path';
+import process from 'node:process';
 import { app, BrowserWindow } from 'electron';
 import started from 'electron-squirrel-startup';
 
