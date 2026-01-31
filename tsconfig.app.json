@@ -14,7 +14,11 @@
     /* Bundler mode */
     "moduleResolution": "Bundler",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@common/*": ["./common/*"],
+      "@main/*": ["./main/*"],
+      "@renderer/*": ["./renderer/*"],
+      "@locales/*": ["./locales/*"]
     },
     "resolveJsonModule": true,
     "allowImportingTsExtensions": true,
@@ -36,6 +40,17 @@
     "src/**/*.d.ts",
     "preload.ts",
     "main/index.ts",
-    "renderer/renderer.ts"
+    "renderer/**/*.ts",
+    "renderer/**/*.tsx",
+    "renderer/**/*.vue",
+    "renderer/**/*.d.ts",
+    "common/**/*.ts",
+    "common/**/*.tsx",
+    "common/**/*.vue",
+    "common/**/*.d.ts",
+    "main/**/*.ts",
+    "main/**/*.tsx",
+    "main/**/*.vue",
+    "main/**/*.d.ts"
   ]
 }
