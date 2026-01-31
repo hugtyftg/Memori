@@ -12,9 +12,8 @@ function handleClick() {
     <p>click this button to increment the count</p>
     <button
       class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-      @click="handleClick"
-    >
-      count: {{ count }}
+      @click="handleClick">
+      {{ $t('count') }}: {{ count }}
     </button>
   </div>
 </template>

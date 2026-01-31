@@ -1,0 +1,14 @@
+{
+  "hello": "Hello",
+  "count": "Count",
+  "click": "Click",
+  "increment": "Increment",
+  "decrement": "Decrement",
+  "reset": "Reset",
+  "add": "Add",
+  "subtract": "Subtract",
+  "multiply": "Multiply",
+  "divide": "Divide",
+  "power": "Power",
+  "square": "Square"
+}

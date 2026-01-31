@@ -30,4 +30,9 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import './index.css';
 
-createApp(App).mount('#app');
+async function initApp(): Promise<void> {
+  const i18n = await import('./i18n').then(module => module.default);
+  createApp(App).use(i18n).mount('#app');
+}
+
+initApp();
