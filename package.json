@@ -1,7 +1,6 @@
 {
   "name": "Memori",
   "productName": "Memori",
-  "type": "module",
   "version": "0.0.0",
   "description": "AI memory based on Electron",
   "license": "MIT",
@@ -58,7 +57,7 @@
     "commitlint-config-cz": "^0.13.3",
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^7.5.1",
-    "electron": "^37.6.0",
+    "electron": "37.1.0",
     "eslint": "^9.27.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-format": "^1.0.1",
