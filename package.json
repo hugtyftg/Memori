@@ -12,7 +12,16 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "eslint --fix"
+    "lint": "eslint --fix",
+    "commit": "git cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "./.cz-config.cjs"
+    }
   },
   "dependencies": {
     "@vueuse/core": "^14.0.0-alpha.0",
@@ -26,6 +35,8 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.13.1",
+    "@commitlint/cli": "^20.4.0",
+    "@commitlint/config-conventional": "^20.4.0",
     "@electron-forge/cli": "7.8.1",
     "@electron-forge/maker-deb": "7.8.1",
     "@electron-forge/maker-rpm": "7.8.1",
@@ -39,6 +50,10 @@
     "@types/electron-squirrel-startup": "^1.0.2",
     "@types/node": "^24.0.8",
     "@vitejs/plugin-vue": "^6.0.0",
+    "commitizen": "^4.3.1",
+    "commitlint-config-cz": "^0.13.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^7.5.1",
     "electron": "^37.6.0",
     "eslint": "^9.27.0",
     "eslint-config-prettier": "^10.1.5",
