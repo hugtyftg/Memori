@@ -3,7 +3,7 @@
   "productName": "Memori",
   "version": "0.0.0",
   "description": "AI memory based on Electron",
-  "main": ".vite/build/main.js",
+  "main": ".vite/build/index.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -33,6 +33,7 @@
     "vite": "^6.0.0"
   },
   "dependencies": {
+    "@vueuse/core": "^14.0.0-alpha.0",
     "electron-squirrel-startup": "^1.0.1",
     "naive-ui": "^2.42.0",
     "pinia": "^3.0.3",
