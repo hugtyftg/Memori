@@ -1,0 +1,14 @@
+{
+  "hello": "你好",
+  "count": "计数",
+  "click": "点击",
+  "increment": "增加",
+  "decrement": "减少",
+  "reset": "重置",
+  "add": "添加",
+  "subtract": "减去",
+  "multiply": "乘法",
+  "divide": "除法",
+  "power": "幂",
+  "square": "平方"
+}

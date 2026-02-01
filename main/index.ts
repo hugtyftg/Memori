@@ -1,5 +1,7 @@
-import { app, BrowserWindow } from 'electron';
+/// <reference types="@electron-forge/plugin-vite/forge-vite-env" />
 import path from 'node:path';
+import process from 'node:process';
+import { app, BrowserWindow } from 'electron';
 import started from 'electron-squirrel-startup';
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
@@ -7,7 +9,7 @@ if (started) {
   app.quit();
 }
 
-const createWindow = () => {
+function createWindow(): void {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
     width: 1024,
@@ -19,14 +21,16 @@ const createWindow = () => {
 
   // and load the index.html of the app.
   if (MAIN_WINDOW_VITE_DEV_SERVER_URL) {
-    mainWindow.loadURL(MAIN_WINDOW_VITE_DEV_SERVER_URL);
+    mainWindow.loadURL(`${MAIN_WINDOW_VITE_DEV_SERVER_URL}${'/html/'}`);
   } else {
-    mainWindow.loadFile(path.join(__dirname, `../renderer/${MAIN_WINDOW_VITE_NAME}/index.html`));
+    mainWindow.loadFile(
+      path.join(__dirname, `../renderer/${MAIN_WINDOW_VITE_NAME}/html/index.html`),
+    );
   }
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
-};
+}
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
