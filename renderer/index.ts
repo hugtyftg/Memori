@@ -26,13 +26,14 @@
  * ```
  */
 
+import naive from 'naive-ui';
 import { createApp } from 'vue';
 import App from './App.vue';
 import './index.css';
 
 async function initApp(): Promise<void> {
   const i18n = await import('./i18n').then(module => module.default);
-  createApp(App).use(i18n).mount('#app');
+  createApp(App).use(naive).use(i18n).mount('#app');
 }
 
 initApp();

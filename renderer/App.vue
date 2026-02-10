@@ -1,19 +1,13 @@
+<template>
+  <n-config-provider :theme="theme" class="h-screen w-screen flex">
+    <aside class="h-full w-[200px] flex flex-none flex-col bg-blue-500">aside</aside>
+    <div class="flex-auto">main</div>
+  </n-config-provider>
+</template>
+
 <script setup lang="ts">
+import type { GlobalTheme } from 'naive-ui';
 import { ref } from 'vue';
 
-const count = ref(0);
-function handleClick() {
-  count.value++;
-}
+const theme = ref<GlobalTheme | null>(null);
 </script>
-<template>
-  <div class="flex flex-col items-center justify-center h-screen bg-gray-100">
-    <h1 class="text-2xl font-bold text-center mb-1">Hello World</h1>
-    <p>click this button to increment the count</p>
-    <button
-      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-      @click="handleClick">
-      {{ $t('count') }}: {{ count }}
-    </button>
-  </div>
-</template>
