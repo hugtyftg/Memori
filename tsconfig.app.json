@@ -32,25 +32,5 @@
     "isolatedModules": true,
     "skipLibCheck": true
   },
-  "include": [
-    "forge.env.d.ts",
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "src/**/*.d.ts",
-    "preload.ts",
-    "main/index.ts",
-    "renderer/**/*.ts",
-    "renderer/**/*.tsx",
-    "renderer/**/*.vue",
-    "renderer/**/*.d.ts",
-    "common/**/*.ts",
-    "common/**/*.tsx",
-    "common/**/*.vue",
-    "common/**/*.d.ts",
-    "main/**/*.ts",
-    "main/**/*.tsx",
-    "main/**/*.vue",
-    "main/**/*.d.ts"
-  ]
+  "include": ["forge.env.d.ts", "renderer/**/*.tsx", "renderer/**/*.vue", "**/*.d.ts", "**/*.ts"]
 }
