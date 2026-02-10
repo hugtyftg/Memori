@@ -1,5 +1,4 @@
 import { resolve } from 'node:path';
-import autoImport from 'unplugin-auto-import/vite';
 import { CSSOptions, defineConfig } from 'vite';
 
 // https://vitejs.dev/config
@@ -7,6 +6,7 @@ import { CSSOptions, defineConfig } from 'vite';
 export default defineConfig(async () => {
   const vue = (await import('@vitejs/plugin-vue')).default;
   const tailwindcss = (await import('@tailwindcss/vite')).default;
+  const autoImport = (await import('unplugin-auto-import/vite')).default;
 
   return {
     plugins: [
